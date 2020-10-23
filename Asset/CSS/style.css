@@ -1,0 +1,179 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: burlywood; 
+    overflow: hidden;
+}
+
+.box {
+    position: relative;
+    height: 600px;
+    width: 600px;
+    margin: auto;
+    box-shadow: 1px 1px 10px 5px grey;
+    background-color: wheat;
+    background-image: url("/Asset/Images/hal1.jpg");
+    background-size: cover;
+}
+.box h1{
+    position: absolute;
+    margin-top: 50px;
+    text-align: center;
+    font-size: 3em;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    padding: 0 20px;
+}
+.tombol{
+    top: 80%;
+    left: 35%;
+    position: absolute;
+    font-size: 20px;
+    background-color:black;
+    color: white;
+    padding: 10px;
+    width: auto;
+}
+/* intro */
+
+.judul h1{
+    font-size: medium;
+    margin-top: 50px;
+    margin-left: 41%;
+    font-weight: bold;
+    position: absolute;
+}
+.judul p{
+    text-align: center;
+    font-size: large;
+    margin: 140px;
+    position: absolute;
+}
+.judul h4{
+    text-align: center;
+    font-size: medium;
+    margin-top: 340px;
+    position: absolute;
+    padding: 0 100px
+}
+
+
+.begin{
+    top: 80%;
+    left: 39%;
+    position: absolute;
+    font-size: 10px;
+    background-color:black;
+    color: white;
+    padding: 10px;
+    width: auto;
+}
+
+footer{
+    color: white;
+    text-align: center;
+    margin-top: 48px;
+    font-size: 26px;
+}
+
+/* game */
+.latar {
+    position: relative;
+    height: 500px;
+    width: 500px;
+    margin: 50px auto;
+    background-image: url(/Asset/Images/background.jpg);
+    background-size: cover;
+}
+
+#mouse {
+    position: absolute;
+    top: 60%;
+    left: 30%;
+    height: 80px;
+    width: 80px;
+    border: none;
+    padding: 0;
+    cursor: url(/Asset/Images/Hammer.cur), grab ;
+    opacity: 0;
+    transition: opacity 0s;
+  }
+  
+.fadeOut {
+    opacity: 1;
+}
+
+#timer {
+  position: absolute;
+  right: 0;
+  margin-top:0 ;
+  background-color: black;
+  padding: 10px;
+  opacity: 0;
+  transition: opacity 1s;
+  color: white;
+}
+#start {
+    top: 45%;
+    left: 45%;
+    position: absolute;
+    font-size: 25px;
+    background-color:black;
+    color: white;
+    padding: 10px;
+    width: auto;
+}
+#score_container {
+    padding: 0 10px;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s;
+    color: white;
+}
+#score {
+    position: absolute;
+    font-size: 30px;
+    text-align: left;
+    top: 0;
+    left: 15%;
+}
+#resultPage {
+    position: absolute;
+    height: 500px;
+    width: 500px;
+    margin: 0px auto;
+    background-image: url("/Asset/Images/finalPage.jpg");
+    background-size: cover;
+    opacity: 0;
+    transition: opacity 1s;
+}
+#resultPage h1{
+    text-align: center;
+    color: black;
+}
+
+#resultPage p{
+    padding-top: 80px;
+    padding-right: 60px;
+    padding-left: 60px;
+    font-size: larger;
+    text-align: center;
+    color: black;
+}
+#resultPage h3{
+    padding-top: 80px;
+    text-align: center;
+    color: black;
+    font-size: x-large;
+}
+#back  {
+    top: 90%;
+    left: 40%;
+    position: absolute;
+    font-size: 10px;
+    background-color:black;
+    color: white;
+    padding: 10px;
+    width: auto;
+}
