@@ -19,10 +19,11 @@ body {
     position: absolute;
     margin-top: 50px;
     text-align: center;
-    font-size: 3em;
-    color: black;
-    font-family: 'Open Sans', sans-serif;
+    font-size: 3rem;
+    color: rgb(140, 112, 24);
+    font-style: italic;
     padding: 0 20px;
+    font-family: 'Carter One', cursive;
 }
 .tombol{
     top: 80%;
@@ -46,23 +47,26 @@ body {
 .judul p{
     text-align: center;
     font-size: large;
-    margin: 140px;
+    margin: 120px;
     position: absolute;
+    font-family: 'Nunito Sans', sans-serif;
+    color: rgb(130, 13, 13);    
 }
 .judul h4{
     text-align: center;
     font-size: medium;
-    margin-top: 340px;
+    margin-top: 400px;
     position: absolute;
-    padding: 0 100px
+    padding: 0 100px;
+    color: white;
 }
 
 
 .begin{
-    top: 80%;
-    left: 39%;
+    top: 85%;
+    left: 37%;
     position: absolute;
-    font-size: 10px;
+    font-size: 15   px;
     background-color:black;
     color: white;
     padding: 10px;
@@ -70,7 +74,7 @@ body {
 }
 
 footer{
-    color: white;
+    color:  rgb(140, 112, 24);
     text-align: center;
     margin-top: 48px;
     font-size: 26px;
@@ -92,9 +96,9 @@ footer{
     left: 30%;
     height: 80px;
     width: 80px;
-    border: none;
+    border: hidden;
     padding: 0;
-    cursor: url(/Asset/Images/Hammer.cur), grab ;
+    cursor: url(/Asset/Images/Hammer.cur), pointer ;
     opacity: 0;
     transition: opacity 0s;
   }
@@ -110,14 +114,14 @@ footer{
   background-color: black;
   padding: 10px;
   opacity: 0;
-  transition: opacity 1s;
+  transition: opacity 0s;
   color: white;
 }
 #start {
     top: 45%;
     left: 45%;
     position: absolute;
-    font-size: 25px;
+    font-size: 20px;
     background-color:black;
     color: white;
     padding: 10px;
@@ -155,8 +159,8 @@ footer{
 
 #resultPage p{
     padding-top: 80px;
-    padding-right: 60px;
-    padding-left: 60px;
+    padding-right: 50px;
+    padding-left: 50px;
     font-size: larger;
     text-align: center;
     color: black;
@@ -168,7 +172,7 @@ footer{
     font-size: x-large;
 }
 #back  {
-    top: 90%;
+    top: 105%;
     left: 40%;
     position: absolute;
     font-size: 10px;

@@ -11,6 +11,7 @@ function fadeOutStart(str){
   document.getElementById(str).parentElement.style.opacity = '0'
 }
 
+
 function gameFunction(){
   if (mouse.style.opacity == 0 && time > 0) {
     mouse.style.opacity = 1
@@ -19,24 +20,31 @@ function gameFunction(){
     let topPosition = Math.floor(Math.random()*(40)) + 40
     mouse.style.left = `${leftPosition}%`
     mouse.style.top = `${topPosition}%`
-    time--
-    timer.innerHTML = `${time}`
-    if(time === 0){
-      stop()
-    }
   } else {
     mouse.style.opacity= '0'
     mouse.style.zIndex= '0'
   }
 }
+
+
 function start(){
   if(time > 0){
-    setInterval(gameFunction, 2000)
+    setInterval(startTimer,1500)
+    setInterval(gameFunction,1000)
     timer.style.opacity= '1'
     timer.style.zIndex= '1'
     scoreBoard.style.opacity= '1'
     scoreBoard.style.zIndex= '1'  
   } 
+}
+
+
+function startTimer(){
+  time--
+  timer.innerHTML = `${time}`
+  if(time === 0){
+    stop()
+  }
 }
 
 function stop(){
@@ -54,9 +62,10 @@ function result(){
   if(score <= 20){
     document.getElementById('statusMisi').innerHTML = `MISSION INCOMPLATED`
     document.getElementById('paragraph').innerHTML = `you have failed to save the kingdom, 
-    the population is currently starving. 
+    the residents are waiting for you to fight back. 
     let's rejoin the royal army to save the kingdom and celebrate our victory`
     document.getElementById('status').innerHTML = `YOU ARE NOOB`
+    document.getElementById('back').style.top = '90%';
   }
 }
 
@@ -71,6 +80,7 @@ function counterScore(){
 }
 
 mouse.addEventListener("click", playAudio)
+
 function playAudio() {
   soundeffect.play();
 }
