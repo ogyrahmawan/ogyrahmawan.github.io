@@ -1,5 +1,5 @@
 let score = 0
-let time = 5
+let time = 20
 let mouse = document.getElementById('mouse')
 let timer = document.getElementById('timer')
 let scoreBoard = document.getElementById('score_container')
